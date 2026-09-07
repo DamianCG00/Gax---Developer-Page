@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- primero se pone normalize.css -->  
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="CSS/normalize.css">
+
+    <!--- nuestro propio CSS -->
+    <link rel="preload" href="CSS/styles.css" as="style">
+    <link rel="stylesheet" href="CSS/styles.css">
     <title>Developer Page</title>
 </head>
 <body>
     <header>
-        <h1>Damian Coba Gongora</h1>
+        <h1 class="my-tittle">Damian Coba Gongora <span>Developer</span></h1>
         <p>Desarrollador full stack</p>
         <nav>
             <ul>
@@ -97,6 +105,43 @@
     </main>
     <section>
         <h2>Contacto</h2>
+        <form >
+
+            <fieldset>
+                <legend>Llena tus datos de contacto para contactarte</legend>
+                <div>
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Nombre completo">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Número de teléfono">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Email">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <label>Mensaje</label>
+                    <textarea placeholder="Escribe tu mensaje"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar mensaje</button>
+                </div>
+
+            </fieldset>
+
+        </form>
     </section>
     <footer>
         <p>© 2026 Damian Coba Gongora. Todos los derechos reservados</p>
