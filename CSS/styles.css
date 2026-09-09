@@ -1,3 +1,47 @@
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --primario: #fd0dd9;
+    --secundario: #e2b616;
+    --gris: #757575;
+
+}
+
+.my-tittle span {
+    font-size: 2rem;
+
+}
+
+.navefacion-principal a:hover{
+    background-color: var(--primario);/*Margin es por fuera y padding es por dentro*/
+    display: flex; /*FlexBox es para alinear elementos*/
+    justify-content: space-between; /*Para que los elementos se separen*/
+    font-weight: bold; /*En negritas*/
+    font-size: 2rem;
+}
+
+.navefacion-principal a{
+    background-color: var(--blanco);
+    text-decoration: none; /*Remueve el subrallado*/
+    padding: 1rem;
+
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+    /*margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;*/
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+
+}
+
+
 /* Truco para uniformidad de texto entre navegadores
 html {
     font-size: 16px;
