@@ -1,64 +1,57 @@
 :root {
     --blanco: #fff;
-    --negro: #000;
-    --primario: #fd0dd9;
-    --secundario: #e2b616;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
     --gris: #757575;
-
 }
 
-.my-tittle span {
-    font-size: 2rem;
-
-}
-
-.navefacion-principal a:hover{
-    background-color: var(--primario);/*Margin es por fuera y padding es por dentro*/
-    display: flex; /*FlexBox es para alinear elementos*/
-    justify-content: space-between; /*Para que los elementos se separen*/
-    font-weight: bold; /*En negritas*/
-    font-size: 2rem;
-}
-
-.navefacion-principal a{
-    background-color: var(--blanco);
-    text-decoration: none; /*Remueve el subrallado*/
-    padding: 1rem;
-
-}
-
-.contenedor {
-    width: 120rem;
-    margin: 0 auto;
-    /*margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;*/
-}
-
-.nav-bg{
-    background-color: var(--secundario);
-
-}
-
-
-/* Truco para uniformidad de texto entre navegadores
+/* Truco para uniformidad de texto entre navegadores */
 html {
-    font-size: 16px;
+    font-size: 62.5%;
 }
-
 body {
     font-size: 16px;
 }
-*/
 
-
-/*SI QUIERO LLAMAR A UNA CLASE HTMLL EN MI ARCIVHO CSS, SE PONE EL . Y EL NOMBRE DE LA CLASE*/
-.my-tittle {
+.my-title {
     text-align: center;
     font-size: 3.8rem;
 }
 
-.my-tittle span {
+.my-title span {
     font-size: 2rem;
+}
+
+.navegacion-principal {
+    background-color: var(--secundario);
+    /* Margin es por fuera y padding (relleno) es por dentro */
+    display: flex; /* Flexbox es para alinear elementos de manera horizontal o vertical */
+justify-content: space-between; /* Espacio entre los elementos */
+    font-weight: bold; /* En negritas*/
+    font-size: 2rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 1rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto; /* Centra el contenedor */
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto; */
+}
+
+.nav-bg {
+    background-color: var(--secundario);
 }
